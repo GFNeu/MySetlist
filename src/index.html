@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySetlist</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+
+  <!--Navbar-->
+    <div class="container-fluid pl-0 pr-0" id="fijo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="MySetlist" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#acercade">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#recitales">Recitales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#precios">Precios</a>
+                </li>
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                   <button class="btn btn-outline my-2 my-sm-0" type="button" id="login" data-toggle="modal" data-target="#exampleModal">
+                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-key" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="llave">
+                    <path fill-rule="evenodd" d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>Log in</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-warning amarillo float-right">Ingresar</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid pl-0 pr-0" id="margenArriba">
+    
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4" id="titulo">Una entrada, <br>toda la música</h1>
+            <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos sunt distinctio incidunt quibusdam quia.</p>
+            <hr class="my-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <a class="btn btn-primary btn-lg" href="#registro" role="button">¡Empezá ya!</a>
+        </div>
+    </div>
+
+    <!--ACERCA DE-->
+    <div class="container" id="acercade">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="2000">
+                      <img src="c1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="c2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="c3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias eum, sapiente odio at eaque eius, ab consequatur maiores iure illo provident soluta quis assumenda cumque fuga modi nisi tempore quo!
+            </div>
+        </div>
+    </div>
+
+  <!--Recitales-->
+    <div id="recitales">
+      <div class="container text-center">
+        <h5 class="card-title">Más de 200 recitales por mes</h5>
+        <p class="card-text">Más de 130 artistas, más de 200 recitales por mes, ¡vos elegís a cuáles ir!</p>
+        <a href="#" class="btn btn-secondary">Más información</a>
+      </div>
+    </div>
+  </div>
+
+  <!--PRECIOS-->
+  <div id="precios" class="container">
+    <div class="row justify-content-center">
+      <h5>Precios</h5>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <div class="card text-center sombra">
+          <div class="card-header">
+            Básico
+            <h5 class="card-title">$1200 <span class="xmes">por mes</span></h5>
+          </div>
+          <div class="card-body">
+            <ul class="text-left">
+              <li>Entrada a más de 200 recitales por mes</li>
+              <li>Acceso a nuestra cartelera exclusiva de eventos</li>
+            </ul>
+            <a href="#registro" class="btn btn-secondary btn-sm gris">Suscribirse</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <div class="card text-center sombra">
+          <div class="card-header">
+            Primera fila
+            <h5 class="card-title">$3200 <span class="xmes">por mes</span></h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-left">Todo lo que incluye la membresía básica más:</p>
+            <ul class="text-left">
+              <li>Acceso a mejores ubicaciones</li>
+              <li>Acceso a nuestra videoteca de conciertos grabados para escuchar cuando quieras</li>
+            </ul>
+            <a href="#registro" class="btn btn-warning btn-sm amarillo">Suscribirse</a>
+          </div>
+          <div class="card-footer text-muted" id="masSolicitado">
+            El más solicitado
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <img src="vip.jpg" alt="vip" id="vip">
+        <div class="card text-center sombra">
+          <div class="card-header">
+            Backstage pass
+            <h5 class="card-title">$9000 <span class="xmes">por mes</span></h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text text-left">Todo lo que incluye la membresía primera fila:</p>
+            <ul class="text-left">
+              <li>Acceso a contenido exclusivo</li>
+              <li>Acceso a camarines: charlá con tus artistas preferidos</li>
+            </ul>
+            <a href="#registro" class="btn btn-secondary btn-sm gris">Suscribirse</a>
+          </div>
+         </div>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="comparar">
+      <a href="#">+ Comparar todos los planes</a>
+    </div>
+  </div>
+
+  <!--REGISTRO-->
+  <div class="container-fluid bg-dark" >
+    <div class="container" id="registro">
+      <h3>¡Empezá ya!</h3>
+      <form class="text-light">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" nmae="nombre" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputApellido">Apellido</label>
+            <input type="text" class="form-control" id="inputApellido" name="apellido" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Correo electrónico</label>
+            <input type="email" class="form-control" id="inputEmail4" name="regEmail"required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4" name="regContraseña" required>
+          </div>
+      </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity" name="ciudad">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Membresía</label>
+            <select id="inputState" class="form-control" name="membresia" required>
+              <option selected>Elegir</option>
+              <option>Básica</option>
+              <option>Primera fila</option>
+              <option>Backstage pass</option>
+            </select>
+          </div>
+        </div>
+        
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" name="aceta" value="si" required>
+            <label class="form-check-label" for="gridCheck">
+              Acepto los <a href="" data-toggle="modal" data-target="#terminos" class="amarillito">términos y condiciones</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row justify-content-center">
+          <button type="submit" class="btn btn-warning btn-lg amarillo">Suscribirse</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!-- Terminos y condiciones -->
+<div class="modal fade" id="terminos" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Términos y condiciones</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis nobis officiis fuga voluptates facilis earum. Tenetur blanditiis quod rem expedita, cum perspiciatis, voluptatibus dolor maiores distinctio, aspernatur perferendis cumque!</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis nobis officiis fuga voluptates facilis earum. Tenetur blanditiis quod rem expedita, cum perspiciatis, voluptatibus dolor maiores distinctio, aspernatur perferendis cumque!</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis nobis officiis fuga voluptates facilis earum. Tenetur blanditiis quod rem expedita, cum perspiciatis, voluptatibus dolor maiores distinctio, aspernatur perferendis cumque!</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis nobis officiis fuga voluptates facilis earum. Tenetur blanditiis quod rem expedita, cum perspiciatis, voluptatibus dolor maiores distinctio, aspernatur perferendis cumque!</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis nobis officiis fuga voluptates facilis earum. Tenetur blanditiis quod rem expedita, cum perspiciatis, voluptatibus dolor maiores distinctio, aspernatur perferendis cumque!</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis nobis officiis fuga voluptates facilis earum. Tenetur blanditiis quod rem expedita, cum perspiciatis, voluptatibus dolor maiores distinctio, aspernatur perferendis cumque!</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis nobis officiis fuga voluptates facilis earum. Tenetur blanditiis quod rem expedita, cum perspiciatis, voluptatibus dolor maiores distinctio, aspernatur perferendis cumque!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--comentarios-->
+<div class="container" id="comentarios">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="user1.jpg" class="card-img rounded-circle" alt="...">
+                </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <p class="card-text oblicuo">"Me encanta MySetlist, lo uso todo el tiempo para ir a escuchar los más increíbles conciertos."</p>
+                      <p class="card-text"><small class="text-muted">3 de Marzo, 2020</small></p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="user2.jpg" class="card-img rounded-circle" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                    <p class="card-text oblicuo">"Desde que descubrí MySetlist no paso un fin de semana aburrido, además ahorro un montón pagando una sola vez para acceder a un montón de recitales."</p>
+                    <p class="card-text"><small class="text-muted">20 de Septiembre, 2020</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="user3.jpg" class="card-img rounded-circle" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                      <span class="fa fa-star naranja"></span>
+                    <p class="card-text oblicuo">Recontra recomiendo a MySetlist, incluso ahora durante la cuarentena los conciertos virtuales están buenísimos.</p>
+                    <p class="card-text"><small class="text-muted">1 de Octubre, 2020</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!--footer-->
+<div class="container-fluid bg-dark" id="footer">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-2">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt="MySetlist" id="logo"></a>
+        </div>
+        <div class="col-sm-12 col-lg-10">
+          <ul>
+            <li><a href="#acercade" class="text-light">Acerca de</a></li>
+            <li><a href="mailto:pruebadecodigo54@gmail.com?" class="text-light">Contacto</a></li>
+            <li><a href="#recitales" class="text-light">Recitales</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

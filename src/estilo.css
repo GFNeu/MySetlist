@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+#margenArriba {
+    margin-top: 95px;
+}
+
+.jumbotron {
+    background-image: url('1.jpg');
+    
+    background-size: cover;
+    background-position: 0 70%;
+    border-radius: 0px;
+}
+
+.jumbotron p {
+    font-weight: bold;
+    color: white;
+    
+}
+
+#logo {
+    width: auto;
+    height: 2.5em;
+}
+
+#titulo {
+    font-style: italic;
+    font-family: 'Passion One', cursive;
+    text-transform: uppercase;
+    font-size: 5em;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    color: #FFFFFF;
+}
+
+#login {
+    color: #ffa200;
+    border-color: #ffa200;
+}
+
+#login:hover {
+    background-color: #ffa200;
+    color: white;
+}
+
+
+
+#recitales {
+    padding: 8%;
+     /* Location of the image */
+    background-image: url(opcion2.jpg);
+    
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when 
+        the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+        on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+        while the background image is loading */
+    background-color: #464646;
+}
+
+#recitales p {
+    color: white;
+}
+
+#acercade {
+    background-color: white;
+    padding-top: 6%;
+    margin-bottom: 6%;
+}
+
+#recitales h5 {
+    font-size: 4em;
+    color: white;
+}
+
+#fondo {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+   
+    z-index: -1;
+    
+}
+
+#llave {
+    margin-right: .3em;
+}
+
+
+#precios {
+    padding-top: 95px;
+    margin-bottom: 3%;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+.sombra:hover {
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.23);
+}
+
+#precios h5 {
+    margin-bottom: 2%;
+}
+
+#vip {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    z-index: 1;
+}
+
+#comparar {
+    margin-top: 2%;
+}
+
+#registro {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+#registro h3{
+    color: white;
+    font-style: italic;
+    font-family: 'Passion One', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 2%;
+}
+
+.amarillo {
+    background-color: #ffa200;
+    color: black;
+    border-color: #ffa200;
+}
+
+.amarillo:hover {
+    background-color: #ffb639;
+    color: white;
+}
+
+.amarillo:active {
+    background: #e08e00;
+    border-color: #ffa200;
+}
+
+.amarillo:focus {
+    background: #e08e00;
+    border-color: #ffa200;
+}
+
+.gris {
+    background: rgb(231, 231, 231);
+    color: black;
+    border-color: rgb(231, 231, 231);
+}
+
+.gris:hover {
+    background-color: #ffa200;
+    border-color: #ffa200;
+}
+
+.gris:active {
+    background-color: #e08e00;
+    border-color: #ffa200;
+}
+
+.amarillito {
+    color:  #ffa200;
+}
+
+.amarillito:hover {
+    color:  #dd8c00;
+}
+
+#masSolicitado {
+    background-color: rgb(255, 240, 212);
+    text-transform: uppercase;
+}
+
+.xmes {
+    color: rgb(156, 156, 156);
+    font-size: .7rem;
+    font-weight: normal;
+}
+
+#fijo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#comentarios {
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.card-img {
+    padding: 1em;
+}
+
+.naranja {
+    color: orange;
+  }
+
+  .oblicuo {
+      font-style: oblique;
+  }
+
+  #footer {
+      padding-top: 3%;
+      padding-bottom: 3%;
+  }
+
+  #footer ul {
+      list-style: none;
+      
+  }
+
+.card-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-body ul {
+    position: relative;
+    padding-left: 1.5em;  /* space to preserve indentation on wrap */
+}
+
+  .card-body ul li:before{
+    content: '✓';
+    position: absolute;
+    left: 0;  /* place the SVG at the start of the padding */
+     width: 1em;
+    height: 1em;
+    
+  }
+
+.card-body p {
+    color: gray;
+    font-size: .7em;
+}
+
+
+@media (max-width: 575.98px) { 
+    #comentarios {
+        display: none;
+    }
+
+    #vip {
+        right: 0px;
+    }
+
+    #titulo {
+        font-size: 3em;
+    }
+
+    #recitales h5 {
+        font-size: 3em;
+
+    }
+
+ }
